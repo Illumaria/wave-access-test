@@ -30,11 +30,11 @@ summarizer.get_statistics(save_path='output.md', output_type='markdown')
 
 ```bash
 pip install -r requirements_dev.txt
-python -m pytest . -v --cov=dataframe_summarizer
+pytest . -v --cov=dataframe_summarizer
 ```
 
 ### Run linter
 
 ```bash
-flake8 . --count --max-line-length=120 --statistics
+flake8 dataframe_summarizer --count --max-line-length=120 --statistics
 ```
